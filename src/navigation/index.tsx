@@ -1,7 +1,7 @@
 import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import HomeScreen from '../screens/home';
-import AuthScreen from '../screens/auth';
+import HomeScreen from '../screens/Home/Home';
+import AuthScreen from '../screens/Auth/Login';
 
 export type RootStackParamList = {
   Home: undefined;
