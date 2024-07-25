@@ -15,6 +15,10 @@
 		5C684CB929FEBCD6D796F4D9 /* PrivacyInfo.xcprivacy in Resources */ = {isa = PBXBuildFile; fileRef = EE4A12B2A03CADCE694A299C /* PrivacyInfo.xcprivacy */; };
 		7699B88040F8A987B510C191 /* libPods-WorldEventAccessApp-WorldEventAccessAppTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F6CBCC0A4E27FBF8BF4A61 /* libPods-WorldEventAccessApp-WorldEventAccessAppTests.a */; };
 		81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81AB9BB72411601600AC10FF /* LaunchScreen.storyboard */; };
+		384EF785BCCC42C2B118E3F8 /* Gilroy-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 251F88C56B054E4E8696C5AF /* Gilroy-Bold.ttf */; };
+		8EAC02E8D4EF4C96959C5281 /* Gilroy-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 0D9CB0DA0B07446EB1EBE796 /* Gilroy-Light.ttf */; };
+		0D94DA12F5744A91963B2E21 /* Gilroy-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8CA17C3C09B84DE5A86FAB46 /* Gilroy-Medium.ttf */; };
+		B4F005090A6542058C06E89D /* Gilroy-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 43A1887A557349B880B431CA /* Gilroy-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +51,10 @@
 		89C6BE57DB24E9ADA2F236DE /* Pods-WorldEventAccessApp-WorldEventAccessAppTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WorldEventAccessApp-WorldEventAccessAppTests.release.xcconfig"; path = "Target Support Files/Pods-WorldEventAccessApp-WorldEventAccessAppTests/Pods-WorldEventAccessApp-WorldEventAccessAppTests.release.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
 		EE4A12B2A03CADCE694A299C /* PrivacyInfo.xcprivacy */ = {isa = PBXFileReference; includeInIndex = 1; name = PrivacyInfo.xcprivacy; path = WorldEventAccessApp/PrivacyInfo.xcprivacy; sourceTree = "<group>"; };
+		251F88C56B054E4E8696C5AF /* Gilroy-Bold.ttf */ = {isa = PBXFileReference; name = "Gilroy-Bold.ttf"; path = "../src/assets/fonts/Gilroy-Bold.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		0D9CB0DA0B07446EB1EBE796 /* Gilroy-Light.ttf */ = {isa = PBXFileReference; name = "Gilroy-Light.ttf"; path = "../src/assets/fonts/Gilroy-Light.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		8CA17C3C09B84DE5A86FAB46 /* Gilroy-Medium.ttf */ = {isa = PBXFileReference; name = "Gilroy-Medium.ttf"; path = "../src/assets/fonts/Gilroy-Medium.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		43A1887A557349B880B431CA /* Gilroy-Regular.ttf */ = {isa = PBXFileReference; name = "Gilroy-Regular.ttf"; path = "../src/assets/fonts/Gilroy-Regular.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 				83CBBA001A601CBA00E9B192 /* Products */,
 				2D16E6871FA4F8E400B85C8A /* Frameworks */,
 				BBD78D7AC51CEA395F1C20DB /* Pods */,
+				4369AFCEA51041D1A4BA373E /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -152,6 +161,18 @@
 			);
 			path = Pods;
 			sourceTree = "<group>";
+		};
+		4369AFCEA51041D1A4BA373E /* Resources */ = {
+			isa = "PBXGroup";
+			children = (
+				251F88C56B054E4E8696C5AF /* Gilroy-Bold.ttf */,
+				0D9CB0DA0B07446EB1EBE796 /* Gilroy-Light.ttf */,
+				8CA17C3C09B84DE5A86FAB46 /* Gilroy-Medium.ttf */,
+				43A1887A557349B880B431CA /* Gilroy-Regular.ttf */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+			path = "";
 		};
 /* End PBXGroup section */
 
@@ -249,6 +270,10 @@
 				81AB9BB82411601600AC10FF /* LaunchScreen.storyboard in Resources */,
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				5C684CB929FEBCD6D796F4D9 /* PrivacyInfo.xcprivacy in Resources */,
+				384EF785BCCC42C2B118E3F8 /* Gilroy-Bold.ttf in Resources */,
+				8EAC02E8D4EF4C96959C5281 /* Gilroy-Light.ttf in Resources */,
+				0D94DA12F5744A91963B2E21 /* Gilroy-Medium.ttf in Resources */,
+				B4F005090A6542058C06E89D /* Gilroy-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,7 +536,7 @@
 					"-lc++",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "org.reactjs.native.example.$(PRODUCT_NAME:rfc1034identifier)";
-				PRODUCT_NAME = WorldEventAccessApp;
+				PRODUCT_NAME = World Event Access App;
 				SWIFT_VERSION = 5.0;
 				VERSIONING_SYSTEM = "apple-generic";
 			};
