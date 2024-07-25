@@ -50,6 +50,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     textDecorationLine: 'underline',
     marginTop: 10,
+    color: '#000',
   },
   eventPrice: {
     fontFamily: 'Gilroy-Bold',

@@ -77,7 +77,7 @@ const HomeScreen: React.FC<HomeScreenProps> = ({navigation}) => {
           <Text style={styles.eventName}>{item.name}</Text>
           <Text style={styles.eventOrganizer}>{item.organizer}</Text>
           <Text style={styles.eventDate}>
-            {new Date(item.eventStartDate).toLocaleDateString()}
+            Date: {new Date(item.eventStartDate).toLocaleDateString()}
           </Text>
           <Text style={styles.eventPrice}>
             {item.visitorPrice || item.exhibitorPrice

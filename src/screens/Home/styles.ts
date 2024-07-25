@@ -61,9 +61,10 @@ export const styles = StyleSheet.create({
     color: light.text,
   },
   eventDate: {
-    fontFamily: 'Gilroy-Light',
-    fontSize: 14,
+    fontFamily: 'Gilroy-Medium',
+    fontSize: 18,
     color: light.grayText,
+    marginVertical: 10,
   },
   eventPrice: {
     fontFamily: 'Gilroy-Bold',
@@ -82,6 +83,7 @@ export const styles = StyleSheet.create({
     fontSize: 16,
     textDecorationLine: 'underline',
     marginLeft: 7,
+    color: '#000',
   },
   logoParking: {
     width: 23,

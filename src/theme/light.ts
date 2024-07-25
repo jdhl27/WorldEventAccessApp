@@ -1,10 +1,12 @@
+import {Platform} from 'react-native';
+
 export default {
   background: '#fff',
   secondaryBackground: '#f1f2ff',
   reverseColor: '#181D31',
   text: '#333333',
   secondaryText: '#fff',
-  grayText: '#aaa',
+  grayText: Platform.OS === 'android' ? '#000' : '#aaa',
   primary: '#4461F2',
   accent: '#ff5b60',
   border: '#bdc3c7',

@@ -54,6 +54,7 @@ const styles = StyleSheet.create({
     fontSize: 16,
     flex: 1,
     textAlign: 'center',
+    color: '#000',
   },
   row: {
     flexDirection: 'row',
@@ -69,6 +70,7 @@ const styles = StyleSheet.create({
     flex: 1,
     textAlign: 'center',
     fontFamily: 'Gilroy-Medium',
+    color: '#000',
   },
 });
 
