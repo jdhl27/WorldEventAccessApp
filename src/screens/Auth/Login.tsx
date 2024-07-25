@@ -8,16 +8,17 @@ import {
   KeyboardAvoidingView,
   Platform,
 } from 'react-native';
+import {CommonActions} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import LinearGradient from 'react-native-linear-gradient';
+
 import {RootStackParamList} from '../../navigation';
 import {login} from '../../api/auth';
-import LinearGradient from 'react-native-linear-gradient';
 import {gradientLight} from '../../theme';
 import {styles} from './styles';
 import InputLogin from '../../components/Input/InputLogin';
 import {validateEmail} from '../../utils/utils';
 import ButtonComponent from '../../components/Button/Button';
-import {CommonActions} from '@react-navigation/native';
 
 type AuthScreenProps = NativeStackScreenProps<RootStackParamList, 'Auth'>;
 

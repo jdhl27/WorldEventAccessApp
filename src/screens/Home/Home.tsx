@@ -8,15 +8,16 @@ import {
   SafeAreaView,
   TouchableOpacity,
 } from 'react-native';
+import {CommonActions} from '@react-navigation/native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
+import LottieView from 'lottie-react-native';
+
 import {RootStackParamList} from '../../navigation';
 import {fetchEvents, Event} from '../../api/events';
 import LoadingComponent from '../../components/Loading/Loading';
 import {styles} from './styles';
 import {useAuth} from '../../context/AuthContext';
-import {CommonActions} from '@react-navigation/native';
 import InputLogin from '../../components/Input/InputLogin';
-import LottieView from 'lottie-react-native';
 
 type HomeScreenProps = NativeStackScreenProps<RootStackParamList, 'Home'>;
 

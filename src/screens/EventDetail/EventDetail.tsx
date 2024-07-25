@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react';
 import {View, Text, Image, SafeAreaView, ScrollView, Alert} from 'react-native';
 import {NativeStackScreenProps} from '@react-navigation/native-stack';
+
 import {RootStackParamList} from '../../navigation';
 import {getEventById, Event} from '../../api/events';
 import LoadingComponent from '../../components/Loading/Loading';
