@@ -2,24 +2,48 @@ import * as React from 'react';
 import {createNativeStackNavigator} from '@react-navigation/native-stack';
 import HomeScreen from '../screens/Home/Home';
 import AuthScreen from '../screens/Auth/Login';
+import EventDetailScreen from '../screens/EventDetail/EventDetail';
+import {useAuth} from '../context/AuthContext';
+import LoadingComponent from '../components/Loading/Loading';
 
 export type RootStackParamList = {
   Home: undefined;
-  Auth: {name: string};
+  Auth: undefined;
+  EventDetail: {id: string};
 };
 
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 const NavigationRoot: React.FC = () => {
+  const {token, isLoading} = useAuth();
+
   return (
-    <Stack.Navigator>
-      <Stack.Screen
-        name="Home"
-        component={HomeScreen}
-        options={{title: 'Welcome'}}
-      />
-      <Stack.Screen name="Auth" component={AuthScreen} />
-    </Stack.Navigator>
+    <LoadingComponent loading={isLoading}>
+      <Stack.Navigator initialRouteName={token ? 'Home' : 'Auth'}>
+        <Stack.Screen
+          name="Auth"
+          component={AuthScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Home"
+          component={HomeScreen}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="EventDetail"
+          component={EventDetailScreen}
+          options={{
+            headerTitle: 'Event detail',
+            headerTitleStyle: {
+              fontFamily: 'Gilroy-Bold',
+              fontSize: 24,
+            },
+            headerBackTitleVisible: false,
+          }}
+        />
+      </Stack.Navigator>
+    </LoadingComponent>
   );
 };
 
